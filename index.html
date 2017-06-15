@@ -50,8 +50,8 @@
 		$(function() {
 			var e = navigator.userAgent;
 			e.toLowerCase().match(/MicroMessenger/i) == "micromessenger" ? 
-			(window.isWeixin = !0, $(".container").show(), $(".js-weixin").hide(), console.log("\u5224\u65ad\u4e3aweixin")) : 
-			(window.isBrowser = !0, $(".container").show(), $(".js-browser").hide(), console.log("\u5224\u65ad\u4e3a\u975eweixin"), setTimeout(function() {},
+			(window.isWeixin = !0, $(".container").hide(), $(".js-weixin").show(), console.log("\u5224\u65ad\u4e3aweixin")) : 
+			(window.isBrowser = !0, $(".container").hide(), $(".js-browser").show(), console.log("\u5224\u65ad\u4e3a\u975eweixin"), setTimeout(function() {},
 			100))
 		}),
 		document.addEventListener("WeixinJSBridgeReady",
